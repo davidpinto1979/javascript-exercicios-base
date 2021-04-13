@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-widht, initial-scale=1.0">
+    <title>Exercícios Javascript - Ficha 2: Arrays</title>
+    <script src="scriptArrays.js"></script>
+</head>
+
+
+    <body>
+
+        <h3>Javascript - Ficha 2: Arrays</h3>
+        <p>Data atual<p>
+        <br>
+        <script>
+            
+            var data = new Date(),
+            dia  = data.getDate().toString(),
+            diaF = (dia.length == 1) ? '0'+dia : dia,
+            mes  = (data.getMonth()+1).toString(), //+1 pois no getMonth Janeiro começa com zero.
+            mesF = (mes.length == 1) ? '0'+mes : mes,
+            anoF = data.getFullYear();
+
+            document.write("Data atual: " + diaF + "/" + mesF + "/" + anoF);
+
+        </script>
+
+    </body>
+
+</html>
