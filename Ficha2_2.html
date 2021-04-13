@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-widht, initial-scale=1.0">
+    <title>Exercícios Javascript - Ficha 2: Arrays</title>
+    <script src="scriptArrays.js"></script>
+</head>
+
+
+    <body>
+
+        <h3>Javascript - Ficha 2: Arrays</h3>
+        <p>União de arrays<p>
+        <br>
+        <script>
+            
+            let a = ["maçã", "banana"];
+            let b = ["kiwi", "ananás", "morango"];
+            
+            document.write("Array a" + "<p>");
+            for (let i=0; i< a.length ; i++){
+            document.write(a[i] + "<p>");
+            }
+            document.write("<hr>");
+
+            document.write("Array b" + "<p>");
+            for (let i=0; i< b.length ; i++){
+            document.write(b[i]  + "<p>");
+            }
+            document.write("<hr>");
+
+            let uniao1 = a.concat(b);
+            let uniao2 = b.concat(a);
+
+            document.write("União Array a e b" + "<p>");
+            for (let i=0; i< uniao1.length ; i++){
+            document.write(uniao1[i]  + "<p>");
+            }
+            document.write("<hr>");
+
+            document.write("União Array b e a" + "<p>");
+            for (let i=0; i< uniao2.length ; i++){
+            document.write(uniao2[i]  + "<p>");
+            }
+            document.write("<hr>");
+
+        </script>
+
+    </body>
+
+</html>
