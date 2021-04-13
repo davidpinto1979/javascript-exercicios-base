@@ -54,12 +54,12 @@ function exercicio5(){
 }
 
 function exercicio6(){
-    document.write("Exercício 6 - escreve a tabuada de um numero <br>");
+    document.write("Exercício 6 - escreve a tabuada de um número <br><br>");
 
-    let numero = parseInt(prompt("Escreva um numero"));
+    let numero = parseInt(prompt("Escreva um número"));
     
 
-    for (i=1; i<10; i++) {
+    for (i=1; i<=10; i++) {
         document.write(numero + " x " + i + " = " + numero * i + "<br>");
         }
 }
